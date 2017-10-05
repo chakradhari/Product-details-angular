@@ -1,0 +1,11 @@
+<p>Hello welcome to login</p>
+<form autocomplete="off" #loginForm="ngForm" (ngSubmit)="authenticateUser(loginForm.value)">
+  <label for="username">Username: </label>
+  <input type="text" name="username" placeholder="User name ..." id="username" (ngModel)="username" />
+  <br>
+  <label for="password">Password: </label>
+  <input type="password" name="password" placeholder="passwod ..." id="password" (ngModel)="password" />
+  <br>
+  <button type="submit">Submit</button>
+</form>
+
